@@ -188,6 +188,32 @@ Hệ thống có thể mở rộng (nhiều máy, nhiều loại dịch vụ).
 ![image](https://github.com/user-attachments/assets/88dc3d45-45d2-4ca7-ae7f-5342a3ec7f40)
 
 + Code Trigger
+```sql
+ALTER TRIGGER [dbo].[trg_CapNhatTongTien]
+ON [dbo].[ThanhToan]
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    UPDATE tt
+    SET TongTien =
+        -- Tiền sử dụng máy: phút * đơn giá chia 60
+        DATEDIFF(MINUTE, tt.ThoiGianBatDau, tt.ThoiGianKetThuc) * ISNULL(m.GiaTien, 0) / 60
+        +
+        -- Cộng thêm tổng tiền dịch vụ (có nhân số lượng)
+        ISNULL((
+            SELECT SUM(CAST(ISNULL(dv.GiaDichVu, 0) AS INT) * ISNULL(ttdv.SoLuong, 1))
+            FROM ThanhToan_DichVu ttdv
+            JOIN DichVu dv ON dv.idDichVu = ttdv.idDichVu
+            WHERE ttdv.idThanhToan = tt.idThanhToan
+        ), 0)
+    FROM ThanhToan tt
+    INNER JOIN inserted i ON i.idThanhToan = tt.idThanhToan
+    INNER JOIN May m ON m.idMay = tt.idMay;
+END;
+```
+### 4. Kết luận
 
 
 
