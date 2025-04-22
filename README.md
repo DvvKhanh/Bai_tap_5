@@ -179,4 +179,15 @@ Hệ thống có thể mở rộng (nhiều máy, nhiều loại dịch vụ).
 
 ![image](https://github.com/user-attachments/assets/fb651f13-df39-4c15-a8cf-66bc7e3e608e)
 
++ Sau khi chạy code trigger, cột TongTien trong bảng ThanhToan vẫn còn giá trị NULL tại vì Trigger trg_CapNhatTongTien chỉ hoạt động khi thực hiện INSERT hoặc UPDATE trên bảng ThanhToan.
+
+![image](https://github.com/user-attachments/assets/7c983369-a474-4cbd-9a53-e60b3faacc97)
+
++ Tiến hành thay đổi 1 số giá trị, kết quả cột TongTien sẽ tự động tính cho mình
+
+![image](https://github.com/user-attachments/assets/88dc3d45-45d2-4ca7-ae7f-5342a3ec7f40)
+
++ Code Trigger
+
+
 
