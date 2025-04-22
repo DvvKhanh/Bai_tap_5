@@ -177,7 +177,7 @@ Hệ thống có thể mở rộng (nhiều máy, nhiều loại dịch vụ).
 
 ### 3. Viết Trigger cho bảng ThanhToan
 
-![image](https://github.com/user-attachments/assets/fb651f13-df39-4c15-a8cf-66bc7e3e608e)
+![image](https://github.com/user-attachments/assets/356fd02a-8db0-41d5-b338-4e087a5d33b3)
 
 + Sau khi chạy code trigger, cột TongTien trong bảng ThanhToan vẫn còn giá trị NULL tại vì Trigger trg_CapNhatTongTien chỉ hoạt động khi thực hiện INSERT hoặc UPDATE trên bảng ThanhToan.
 
@@ -189,7 +189,7 @@ Hệ thống có thể mở rộng (nhiều máy, nhiều loại dịch vụ).
 
 + Code Trigger
 ```sql
-ALTER TRIGGER [dbo].[trg_CapNhatTongTien]
+CREATE TRIGGER [dbo].[trg_CapNhatTongTien]
 ON [dbo].[ThanhToan]
 AFTER INSERT, UPDATE
 AS
