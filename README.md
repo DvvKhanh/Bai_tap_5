@@ -113,5 +113,27 @@ Hệ thống có thể mở rộng (nhiều máy, nhiều loại dịch vụ).
  
 ![image](https://github.com/user-attachments/assets/64c46660-c2bf-4de4-a032-ac05d5f2c4d5)
 
+3.3. Khóa ngoại(FK)
+
+🍀Bảng ThanhToan
+- Bảng ThanhToan tham chiếu đến bảng KhachHang qua trường idKhachHang.
+  
+![image](https://github.com/user-attachments/assets/d4c105d4-5a9b-4e4f-873f-2b64e033cff0)
+
+- Bảng ThanhToan tham chiếu đến bảng May qua trường idMay.
+
+![image](https://github.com/user-attachments/assets/7ee7e9a0-f231-4316-aa62-580abaa928df)
+
+🍀Bảng ThanhToan_DichVu
+- Bảng ThanhToan_DichVu tham chiếu đến bảng DichVu qua trường idDichVu.
+  
+![image](https://github.com/user-attachments/assets/cde5c040-6ab6-4b28-bfe2-cd3ad4cb7a2c)
+
+- Bảng ThanhToan_DichVu tham chiếu đến bảng ThanhToan qua trường idThanhToan.
+
+![image](https://github.com/user-attachments/assets/15856bc9-64d0-4dbf-bde0-7027a3cd8adc)
+
+
+
 
 
