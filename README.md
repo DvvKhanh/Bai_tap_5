@@ -214,6 +214,7 @@ BEGIN
 END;
 ```
 ### 4. Kết luận
+Việc sử dụng trigger trong đồ án"Quản lý quán Internet" giúp em tự động tính tổng tiền cho khách sau mỗi lần thanh toán mà không cần phải nhập tay. Nhờ đó dữ liệu luôn chính xác, đỡ mất công kiểm tra lại. Ngoài ra, trigger còn giúp hệ thống kiểm soát tốt hơn, ví dụ như không cho dùng máy nếu máy đang hỏng. Em thấy dùng trigger làm hệ thống gọn hơn, tiết kiệm thời gian và đỡ sai sót khi nhập liệu.
 
 
 
