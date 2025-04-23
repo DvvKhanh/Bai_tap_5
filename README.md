@@ -58,7 +58,6 @@ DEADLINE: 23H59:59 NGÀY 23/04/2025
 - Tính ổn định và bảo mật (mật khẩu khách hàng).
 
 ### 3. Cơ sở dữ liệu của Đồ án PT&TKHT : Có database với các bảng dữ liệu cần thiết (3nf), Các bảng này đã có PK, FK, CK cần thiết
-Hệ thống có thể mở rộng (nhiều máy, nhiều loại dịch vụ).
 
 3.1. Tạo Database QuanLyQuanInternet
 
