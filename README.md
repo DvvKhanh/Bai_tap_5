@@ -1,5 +1,5 @@
 # Bài tập về nhà 05 Môn Hệ quản trị CSDL
-# Họ tên: Đậu Văn Khánh MSSV:K225480106099
+# Họ tên: Đậu Văn Khánh - MSSV:K225480106099
 SUBJECT: Trigger on mssql
 
 A. Trình bày lại đầu bài của đồ án PT&TKHT:
